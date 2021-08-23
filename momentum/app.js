@@ -1,14 +1,5 @@
-const a = 5;
-const b = 3;
-
-console. log(a+b);
-console. log(a*b);
-console. log(a/b);
-
-let myName = "nicolas";
-
-console. log(myName);
-
-myName = "Junje";
-
-console. log("your new name is " + myName);
+const amIFat = null;
+/*없다는 것을 확실히 할때 쓰인다. 자연적으로는 절대 나오지 않음*/
+let something; 
+/*undefined*/
+console. log(something);
