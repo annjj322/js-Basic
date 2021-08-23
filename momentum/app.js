@@ -1,24 +1,36 @@
-const mon ="mon";
-const tue ="tue";
-const wed ="wed";
-const thu ="thu";
-const fri ="fri";
-const sat ="sat";
+const playerName ="nico";
+const playerPoints=1212;
+const playerHandsome =false;
+const playerFat = "little bit";
 
-const dayOfWeek = [mon, tue, wed, thu, fri, sat]
-/*""안에 넣어줘도 된다.*/
+/*
+player.name
+player.points
+player.handsome
+*/
+//이렇게 해야 정리가 잘된다. 
 
-console.log(dayOfWeek);
-/*컴퓨터는 0부터 숫자를 센다.*/
 
-dayOfWeek.push("sun");
+//const player =["nico", 1212, false, "little bit"];
+//이런식은 좋지않음. 리스트가 뭘 뜻하는지 모름.
+//player [0] == name 이런식의 힌트가 필요.
 
-console.log(dayOfWeek);
-//array는 하나의 항목안에 리스트를 만드는 것.
+const player = {
+    name: "nico",
+    points: 10,
+    fat: true,
+    handsome: "little bit",
+}
 
-const apple ="apple";
-//이런식으로는 너무 길어서 리스트를 만들 수 없다.
+console.log(player);
+//console.log(player.name);
+console.log(player["name"]); 
+//와 같은 역할
 
-const toBuy = ["potato", "tomato", "pizza"];
-toBuy.push("kimbab"); //kimbab을 array 안으로 추가
-console.log(toBuy[2]);
+player.fat = false;
+console.log(player);
+//const는 수정이 안되지만 const 안의 무언가는 없데이트가 가능.
+
+player.lastName ="potato";
+console.log(player);
+//추가하거나 업데이트 가능
