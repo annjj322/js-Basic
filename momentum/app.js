@@ -16,6 +16,9 @@ const calculator = {
 /*
 console은 외부로 표현되지 않는다.
 alert 또한 경고하고 없어진다.
+return 이후로는 실행되지 않는다.
+return을 하고나면 결과값만 할당된다.
+console에 보이는 것처럼 추측하고 싶다면 replacement 방법을 이용해라.
 */
 const plusResult = calculator.add(2,3);
 const minusResult = calculator.minus(plusResult,10);
