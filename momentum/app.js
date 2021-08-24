@@ -1,18 +1,8 @@
-//console.log("Hello my name is Nico");
-//console.log("Hello my name is Dal");
-// 너무 복잡해서 생긴 function
-//뒤에 이름만 바꾸면 됨.
-
-function sayHello(nameOfPerson, age){
-    console.log("Hello my name is " + nameOfPerson +" and I'm " + age);
+function plus(a, b){
+    console.log(a+ b);
 }
-/*
-sayHello();
-sayHello();
-sayHello();
-실행시키는 방법
-*/ 
+//NaN = Not a Number
+plus(8, 60);
 
-sayHello("june", 15);
-sayHello("dal", 24);
-sayHello("lynn", 21);
+//plus(a, b)와 같은 형식을 넣어주고 형식에 맞게 값을 대입하면
+//{}내부의 매뉴얼이 실행되도록 하는 기능. Function
