@@ -9,8 +9,14 @@ const age = parseInt( prompt("How old are you?"));
 //false => Number
 
 if(isNaN(age)) {
-    console.log("Please write a number")
+    console.log("Please write a number");
+} else if (age < 18) {
+    console.log("You are too young.");
+} else if(age >= 18 && age<= 50) {
+    console.log("You can drink");
 } else {
-    console.log("Thank you for writing your age.")
+    console.log("You can't drink");
 }
-//condition = have to boolean.
+//&& 는 둘다 true여야 한다.
+//|| 는 둘다 false여야 한다.
+//condition = have to boolean. (true or false)
