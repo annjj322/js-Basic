@@ -1,2 +1,11 @@
-document.title="Hello! From JS";
-//HTML 에서 바꿔도 JS가 더 강하다.
+document.getElementById("title");
+//string을 호출하는 함수
+
+console.dir(title);
+
+title.innerText="Got you";
+//Grab me 부분을 JS로 변환
+
+console.log(title.id);
+console.log(title.className);
+//console에 title id와 className 을 불러온다.
