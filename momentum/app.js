@@ -1,20 +1,22 @@
 const h1 = document.querySelector(".hello h1");
-//First. element setting
 
-//console.log(h1.style.color);  nothing
-//console.log(h1.style.color);  blue -> forever
 function handleh1Click() {
-    const currentColor = h1.style.color;
-    let newColor;
-    if(currentColor == "blue") {
-        newColor = "tomato";
-    } else {
-       newColor = "blue";
-    }
-    h1.style.color = newColor;
-}
-//Third. function
+    h1.classList.toggle("active");
+};
+//add and remove 를 한줄로 표현
+//turn on, turn off 의 기능을 하는 것이 toggle
+
+
+
+// const clickedClass ="active";
+//    if(h1.classList.contains(clickedClass)){
+//       h1.classList.remove(clickedClass);
+//    } else{
+//        h1.classList.add(clickedClass);
+//    };
+//이렇게 해야 sexy-font 라는 기존의 class에는 지장이 없다.
+
+
 
 
 h1.addEventListener("click", handleh1Click);
-//Second. listene events
