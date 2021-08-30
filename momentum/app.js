@@ -1,22 +1,20 @@
-const h1 = document.querySelector(".hello h1");
+const loginForm = document.querySelector(".login-form");
+const loginInput = document.querySelector(".login-form input");
+const greeting = document.querySelector(".greeting")
 
-function handleh1Click() {
-    h1.classList.toggle("active");
-};
-//add and remove 를 한줄로 표현
-//turn on, turn off 의 기능을 하는 것이 toggle
+const HIDDEN_CLASSNAME = "hidden";
 
 
 
-// const clickedClass ="active";
-//    if(h1.classList.contains(clickedClass)){
-//       h1.classList.remove(clickedClass);
-//    } else{
-//        h1.classList.add(clickedClass);
-//    };
-//이렇게 해야 sexy-font 라는 기존의 class에는 지장이 없다.
+function onLoginSubmit(event) {
+    event.preventDefault(); //기본값 제어. default 값을 없애준다.
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+    const username = loginInput.value;
+    greeting.innerText = "Hello " + username;
+    greeting.classList.remove(HIDDEN_CLASSNAME);
+}
 
 
 
 
-h1.addEventListener("click", handleh1Click);
+loginForm.addEventListener("submit", onLoginSubmit)
