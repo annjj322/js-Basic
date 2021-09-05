@@ -6,3 +6,33 @@
     display: flex;
     flex-direction: column;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.clock {
+    font-size: 90px;
+    color: cornflowerblue;
+}
+
+.text-type {
+    border-style: none none solid none;
+}
+
+.login-form {
+    margin-bottom: 30px;
+}
+
+.city {
+    margin-right: 10px;
+}
+
+#quote {
+    position: absolute;
+    bottom: 20px;
+}
